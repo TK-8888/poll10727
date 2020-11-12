@@ -15,4 +15,4 @@ class Option(models.Model):
     count = models.IntegerField(default=0)
 
 def __str__(self):
-        return str(self.id) + ')'+ self.tittle + "@" + str()
+        return str(self.id) + ':' + self.tittle  
