@@ -2,11 +2,13 @@
 
 {% block content %}
 <h1>投票主題</h1>
+<a href="/poll/create/">新增投票主題</a>
 <u1>
     {% for poll in poll_list %}
     <li>
-        {{ poll.date_create }} - 
+        {{ poll.date_created }} - 
         <a href="/poll/{{ poll.id }}/">{{ poll.subject }}</a>
+        | <a href="/poll/{{ poll.id }}edit/">修改</a>
     </li>
     {% endfor %}
 </u1>
