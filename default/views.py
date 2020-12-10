@@ -64,5 +64,5 @@ class OptionEdit(UpdateView):
 class OptionDelete(DeleteView):
     model = Option
 
-    def det_success_url(self):
+    def get_success_url(self):
         return "/poll/{}/".format(self.object.poll_id)
